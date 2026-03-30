@@ -1,6 +1,7 @@
 import { Menu, X, ShoppingCart } from 'lucide-react';
 import NavItem from './NavItem/NavItem';
 import { useState } from 'react';
+import Button from '../ui/Button/Button';
 
 const navItems = [
     {
@@ -69,13 +70,11 @@ const Navbar = () => {
                         <ShoppingCart />
                     </span>
 
-                    <p className='text-base font-medium cursor-pointer hover:text-cyan-600'>
+                    <p className='text-base font-semibold cursor-pointer hover:text-cyan-600'>
                         Login
                     </p>
 
-                    <button className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-lg font-semibold text-white rounded-full'>
-                        Get Started
-                    </button>
+                    <Button content='Get Started' />
                 </div>
             </div>
         </div>
