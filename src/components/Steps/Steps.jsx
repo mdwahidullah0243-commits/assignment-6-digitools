@@ -21,24 +21,26 @@ const stepsData = [
 
 const Steps = () => {
     return (
-        <div className='w-11/12 md:w-10/12 mx-auto mt-20'>
-            <div className='text-center space-y-3'>
-                <h2 className='text-4xl font-bold'>Get Started in 3 Steps</h2>
-                <p className='text-[#627382] text-base'>
-                    Start using premium digital tools in minutes, not hours.
-                </p>
-            </div>
+        <div className='bg-[#F9FAFC] mt-20 py-30'>
+            <div className='w-11/12 md:w-10/12 mx-auto'>
+                <div className='text-center space-y-3'>
+                    <h2 className='text-4xl lg:text-5xl font-bold'>Get Started in 3 Steps</h2>
+                    <p className='text-[#627382] text-base'>
+                        Start using premium digital tools in minutes, not hours.
+                    </p>
+                </div>
 
-            <div className='mt-10 grid grid-cols-1 sm:max-lg:grid-cols-2 lg:grid-cols-3 gap-5'>
-                {
-                    stepsData.map(stepCard => {
-                        return (
-                            <Card
-                                key={stepCard.id}
-                                stepCard={stepCard} />
-                        )
-                    })
-                }
+                <div className='mt-10 grid grid-cols-1 sm:max-lg:grid-cols-2 lg:grid-cols-3 gap-5'>
+                    {
+                        stepsData.map(stepCard => {
+                            return (
+                                <Card
+                                    key={stepCard.id}
+                                    stepCard={stepCard} />
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     );
