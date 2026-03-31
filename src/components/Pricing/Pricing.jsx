@@ -28,7 +28,7 @@ const pricingData = [
             'Advanced analytics'
         ],
         buttonContent: 'Start Pro Trial',
-        badge: 'Most Popular'
+        tagType: 'Most Popular'
     },
     {
         title: 'Enterprise',

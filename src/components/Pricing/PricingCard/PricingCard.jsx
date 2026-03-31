@@ -10,7 +10,7 @@ const PricingCard = ({ data }) => {
                 title === 'Pro'
                     ?
                     <span className='absolute -top-5 left-[36%] sm:left-[30%] bg-[#FEF3C6] text-[#BB4D00] font-semibold py-2 px-4 rounded-full'>
-                        {data.badge}
+                        {data.tagType}
                     </span>
 
                     : ''

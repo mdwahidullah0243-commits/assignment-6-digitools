@@ -6,23 +6,26 @@ import Pricing from './components/Pricing/Pricing'
 import Stats from './components/Stats/Stats'
 import Steps from './components/Steps/Steps'
 import Footer from './components/Footer/Footer'
+import DigitalTools from './components/DigitalTools/DigitalTools'
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
-      <Banner />
+      {/* <Banner /> */}
 
-      <Stats />
+      {/* <Stats /> */}
 
-      <Steps />
+      <DigitalTools />
 
-      <Pricing />
+      {/* <Steps /> */}
 
-      <Workflow />
+      {/* <Pricing /> */}
 
-      <Footer />
+      {/* <Workflow /> */}
+
+      {/* <Footer /> */}
     </>
   )
 }

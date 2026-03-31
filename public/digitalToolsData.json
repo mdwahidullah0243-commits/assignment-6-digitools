@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "FlowDesk",
+        "description": "A powerful project management tool that streamlines team workflows with intuitive kanban boards and real-time collaboration.",
+        "price": 12,
+        "period": "monthly",
+        "tagType": "Popular",
+        "features": [
+            "Unlimited kanban boards",
+            "Real-time collaboration",
+            "Time tracking",
+            "Gantt charts",
+            "Custom workflows"
+        ],
+        "icon": "LayoutDashboard"
+    },
+    {
+        "id": 2,
+        "name": "InkCraft AI",
+        "description": "AI-powered content writing assistant that generates SEO-optimized blogs, ad copies, and social media posts in seconds.",
+        "price": 29,
+        "period": "monthly",
+        "tagType": "Best Seller",
+        "features": [
+            "50+ content templates",
+            "SEO optimization",
+            "Plagiarism checker",
+            "Multilingual support",
+            "Tone customization"
+        ],
+        "icon": "PenTool"
+    },
+    {
+        "id": 3,
+        "name": "VaultSync",
+        "description": "Enterprise-grade cloud storage with end-to-end encryption, smart file organization, and seamless cross-device syncing.",
+        "price": 99,
+        "period": "yearly",
+        "tagType": "New",
+        "features": [
+            "2TB cloud storage",
+            "End-to-end encryption",
+            "Version history",
+            "Smart file tagTypeging",
+            "Offline access"
+        ],
+        "icon": "CloudUpload"
+    },
+    {
+        "id": 4,
+        "name": "PixelForge",
+        "description": "Professional design suite for creating stunning graphics, UI mockups, and brand assets with an easy drag-and-drop editor.",
+        "price": 19,
+        "period": "monthly",
+        "tagType": "Popular",
+        "features": [
+            "10,000+ design assets",
+            "Brand kit manager",
+            "Export to SVG/PNG/PDF",
+            "Team collaboration",
+            "Custom font uploads"
+        ],
+        "icon": "Palette"
+    },
+    {
+        "id": 5,
+        "name": "MetricsPulse",
+        "description": "Advanced analytics dashboard that consolidates data from all your marketing channels into one unified, real-time view.",
+        "price": 49,
+        "period": "monthly",
+        "tagType": "Best Seller",
+        "features": [
+            "20+ integrations",
+            "Real-time dashboards",
+            "Custom KPI tracking",
+            "Automated reports",
+            "Funnel analysis"
+        ],
+        "icon": "BarChart2"
+    },
+    {
+        "id": 6,
+        "name": "FormNest",
+        "description": "Build beautiful, interactive forms and surveys in minutes with conditional logic, payment collection, and deep integrations.",
+        "price": 0,
+        "period": "one-time",
+        "tagType": "Free",
+        "features": [
+            "Unlimited forms",
+            "Conditional logic",
+            "Payment collection",
+            "Custom branding",
+            "CSV export"
+        ],
+        "icon": "ClipboardList"
+    },
+    {
+        "id": 7,
+        "name": "CodeNest",
+        "description": "A collaborative cloud IDE for developers with AI code completion, instant preview, and one-click deployment pipelines.",
+        "price": 199,
+        "period": "yearly",
+        "tagType": "New",
+        "features": [
+            "AI code completion",
+            "Live collaboration",
+            "Built-in terminal",
+            "One-click deploy",
+            "GitHub integration"
+        ],
+        "icon": "Code2"
+    },
+    {
+        "id": 8,
+        "name": "MailBlast",
+        "description": "Email marketing platform with smart segmentation, automated drip campaigns, and detailed engagement analytics.",
+        "price": 39,
+        "period": "monthly",
+        "tagType": "Popular",
+        "features": [
+            "Unlimited email sends",
+            "Smart segmentation",
+            "Drip campaigns",
+            "A/B testing",
+            "Spam score checker"
+        ],
+        "icon": "Mail"
+    },
+    {
+        "id": 9,
+        "name": "SecurePass",
+        "description": "Zero-knowledge password manager with biometric login, secure vault sharing, and dark web breach monitoring.",
+        "price": 29,
+        "period": "yearly",
+        "tagType": "Best Seller",
+        "features": [
+            "Unlimited passwords",
+            "Biometric login",
+            "Secure vault sharing",
+            "Dark web monitoring",
+            "Browser extension"
+        ],
+        "icon": "ShieldCheck"
+    },
+    {
+        "id": 10,
+        "name": "ZoomCast",
+        "description": "HD video conferencing and webinar platform with virtual backgrounds, live polls, and automated meeting transcripts.",
+        "price": 149,
+        "period": "yearly",
+        "tagType": "New",
+        "features": [
+            "1080p HD video",
+            "Up to 500 participants",
+            "Live polls & Q&A",
+            "Auto transcription",
+            "Cloud recording"
+        ],
+        "icon": "Video"
+    }
+]
