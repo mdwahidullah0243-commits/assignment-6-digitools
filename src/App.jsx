@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Pricing from './components/Pricing/Pricing'
 import Stats from './components/Stats/Stats'
 import Steps from './components/Steps/Steps'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       <Pricing />
 
       <Workflow />
+
+      <Footer />
     </>
   )
 }
