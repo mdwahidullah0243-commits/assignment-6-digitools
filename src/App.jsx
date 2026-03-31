@@ -8,24 +8,27 @@ import Steps from './components/Steps/Steps'
 import Footer from './components/Footer/Footer'
 import DigitalTools from './components/DigitalTools/DigitalTools'
 
+const digitalToolsRes = fetch('/digitalToolsData.json').then(res => res.json())
+
 function App() {
+
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
 
-      {/* <Banner /> */}
+      <Banner />
 
-      {/* <Stats /> */}
+      <Stats />
 
-      <DigitalTools />
+      <DigitalTools digitalToolsRes={digitalToolsRes} />
 
-      {/* <Steps /> */}
+      <Steps />
 
-      {/* <Pricing /> */}
+      <Pricing />
 
-      {/* <Workflow /> */}
+      <Workflow />
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

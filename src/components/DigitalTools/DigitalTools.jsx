@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import writing from '../../assets/products/writing_2327400 1.png';
+import React, { use, useState } from 'react';
+import DigitalToolCard from './DigitalToolCard/DigitalToolCard';
 
-const DigitalTools = () => {
+const DigitalTools = ({digitalToolsRes}) => {
     const [selectedTab, setSelectedTab] = useState('products');
 
+    const digitalToolsData = use(digitalToolsRes); 
+
     return (
-        <div className='w-11/12 md:w-10/12 mx-auto mt-20'>
+        <div className='w-9/12 sm:w-11/12 md:w-10/12 mx-auto mt-20'>
             <div className='flex flex-col items-center gap-6'>
 
                 {/* Heading and Description */}
@@ -39,6 +41,19 @@ const DigitalTools = () => {
                     </button>
 
                 </div>
+            </div>
+
+
+            <div className='mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-6'>
+                {
+                    digitalToolsData.map(tool => {
+                        return (
+                            <DigitalToolCard
+                                key={tool.id}
+                                tool={tool} />
+                        )
+                    })
+                }
             </div>
         </div>
     );

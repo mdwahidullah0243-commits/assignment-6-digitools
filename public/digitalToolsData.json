@@ -4,7 +4,7 @@
         "name": "FlowDesk",
         "description": "A powerful project management tool that streamlines team workflows with intuitive kanban boards and real-time collaboration.",
         "price": 12,
-        "period": "monthly",
+        "period": "Monthly",
         "tagType": "Popular",
         "features": [
             "Unlimited kanban boards",
@@ -13,14 +13,14 @@
             "Gantt charts",
             "Custom workflows"
         ],
-        "icon": "LayoutDashboard"
+        "icon": "https://i.ibb.co.com/qMFFjWZs/dashboard-layout.png"
     },
     {
         "id": 2,
         "name": "InkCraft AI",
         "description": "AI-powered content writing assistant that generates SEO-optimized blogs, ad copies, and social media posts in seconds.",
         "price": 29,
-        "period": "monthly",
+        "period": "Monthly",
         "tagType": "Best Seller",
         "features": [
             "50+ content templates",
@@ -29,14 +29,14 @@
             "Multilingual support",
             "Tone customization"
         ],
-        "icon": "PenTool"
+        "icon": "https://i.ibb.co.com/y9Ybx2H/pentool.png"
     },
     {
         "id": 3,
         "name": "VaultSync",
         "description": "Enterprise-grade cloud storage with end-to-end encryption, smart file organization, and seamless cross-device syncing.",
         "price": 99,
-        "period": "yearly",
+        "period": "Yearly",
         "tagType": "New",
         "features": [
             "2TB cloud storage",
@@ -45,14 +45,14 @@
             "Smart file tagTypeging",
             "Offline access"
         ],
-        "icon": "CloudUpload"
+        "icon": "https://i.ibb.co.com/xSLZmV7D/cloud-sync.png"
     },
     {
         "id": 4,
         "name": "PixelForge",
         "description": "Professional design suite for creating stunning graphics, UI mockups, and brand assets with an easy drag-and-drop editor.",
         "price": 19,
-        "period": "monthly",
+        "period": "Monthly",
         "tagType": "Popular",
         "features": [
             "10,000+ design assets",
@@ -61,14 +61,14 @@
             "Team collaboration",
             "Custom font uploads"
         ],
-        "icon": "Palette"
+        "icon": "https://i.ibb.co.com/jcdfmjP/palette.png"
     },
     {
         "id": 5,
         "name": "MetricsPulse",
         "description": "Advanced analytics dashboard that consolidates data from all your marketing channels into one unified, real-time view.",
         "price": 49,
-        "period": "monthly",
+        "period": "Monthly",
         "tagType": "Best Seller",
         "features": [
             "20+ integrations",
@@ -77,15 +77,15 @@
             "Automated reports",
             "Funnel analysis"
         ],
-        "icon": "BarChart2"
+        "icon": "https://i.ibb.co.com/4CSgskW/bar-chart.png"
     },
     {
         "id": 6,
         "name": "FormNest",
         "description": "Build beautiful, interactive forms and surveys in minutes with conditional logic, payment collection, and deep integrations.",
-        "price": 0,
-        "period": "one-time",
-        "tagType": "Free",
+        "price": 38,
+        "period": "One-Time",
+        "tagType": "New",
         "features": [
             "Unlimited forms",
             "Conditional logic",
@@ -93,14 +93,14 @@
             "Custom branding",
             "CSV export"
         ],
-        "icon": "ClipboardList"
+        "icon": "https://i.ibb.co.com/MktQZHdQ/clipboard.png"
     },
     {
         "id": 7,
         "name": "CodeNest",
         "description": "A collaborative cloud IDE for developers with AI code completion, instant preview, and one-click deployment pipelines.",
         "price": 199,
-        "period": "yearly",
+        "period": "Yearly",
         "tagType": "New",
         "features": [
             "AI code completion",
@@ -109,14 +109,14 @@
             "One-click deploy",
             "GitHub integration"
         ],
-        "icon": "Code2"
+        "icon": "https://i.ibb.co.com/RpLbbjW9/code-two.png"
     },
     {
         "id": 8,
         "name": "MailBlast",
         "description": "Email marketing platform with smart segmentation, automated drip campaigns, and detailed engagement analytics.",
         "price": 39,
-        "period": "monthly",
+        "period": "Monthly",
         "tagType": "Popular",
         "features": [
             "Unlimited email sends",
@@ -125,14 +125,14 @@
             "A/B testing",
             "Spam score checker"
         ],
-        "icon": "Mail"
+        "icon": "https://i.ibb.co.com/93Ttg6nn/mail.png"
     },
     {
         "id": 9,
         "name": "SecurePass",
         "description": "Zero-knowledge password manager with biometric login, secure vault sharing, and dark web breach monitoring.",
         "price": 29,
-        "period": "yearly",
+        "period": "Yearly",
         "tagType": "Best Seller",
         "features": [
             "Unlimited passwords",
@@ -141,14 +141,14 @@
             "Dark web monitoring",
             "Browser extension"
         ],
-        "icon": "ShieldCheck"
+        "icon": "https://i.ibb.co.com/nMqmQw4L/check-sheild.png"
     },
     {
         "id": 10,
         "name": "ZoomCast",
         "description": "HD video conferencing and webinar platform with virtual backgrounds, live polls, and automated meeting transcripts.",
         "price": 149,
-        "period": "yearly",
+        "period": "Yearly",
         "tagType": "New",
         "features": [
             "1080p HD video",
@@ -157,6 +157,6 @@
             "Auto transcription",
             "Cloud recording"
         ],
-        "icon": "Video"
+        "icon": "https://i.ibb.co.com/7xTsQFG4/video.png"
     }
 ]
