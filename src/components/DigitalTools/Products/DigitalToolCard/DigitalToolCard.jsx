@@ -1,7 +1,8 @@
 import React from 'react';
 import FeatureTool from './FeatureTool/FeatureTool';
+import DigiCardBtn from './DigiCardBtn/DigiCardBtn';
 
-const DigitalToolCard = ({ tool }) => {
+const DigitalToolCard = ({ tool, setSelectedTools, selectedTools, setActiveTool, activeTool }) => {
     const { features, tagType } = tool;
 
     return (
@@ -41,9 +42,10 @@ const DigitalToolCard = ({ tool }) => {
             </div>
 
             <div>
-                <button className='btn w-full h-auto py-2 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold rounded-full text-lg'>
-                    Buy Now
-                </button>
+                <DigiCardBtn
+                    tool={tool}
+                    setSelectedTools={setSelectedTools} selectedTools={selectedTools}
+                    activeTool={activeTool} setActiveTool={setActiveTool} />
             </div>
         </div>
     );

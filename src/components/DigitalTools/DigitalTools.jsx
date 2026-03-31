@@ -1,10 +1,12 @@
 import React, { use, useState } from 'react';
-import DigitalToolCard from './DigitalToolCard/DigitalToolCard';
+import Products from './Products/Products';
+import Cart from './Cart/Cart';
 
-const DigitalTools = ({digitalToolsRes}) => {
+const DigitalTools = ({ digitalToolsRes }) => {
     const [selectedTab, setSelectedTab] = useState('products');
+    const [selectedTools, setSelectedTools] = useState([]);
 
-    const digitalToolsData = use(digitalToolsRes); 
+    const digitalToolsData = use(digitalToolsRes);
 
     return (
         <div className='w-9/12 sm:w-11/12 md:w-10/12 mx-auto mt-20'>
@@ -37,22 +39,23 @@ const DigitalTools = ({digitalToolsRes}) => {
                         onClick={() => setSelectedTab('cart')}
                         role="tab"
                         className={`tab rounded-full h-auto py-2 px-5 text-lg font-semibold ${selectedTab === 'cart' ? 'tab-active bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'text-slate-600'}`}>
-                        Cart (0)
+                        Cart ({selectedTools.length})
                     </button>
 
                 </div>
             </div>
 
-
-            <div className='mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-6'>
+            <div className='mt-10'>
                 {
-                    digitalToolsData.map(tool => {
-                        return (
-                            <DigitalToolCard
-                                key={tool.id}
-                                tool={tool} />
-                        )
-                    })
+                    selectedTab === 'products'
+                        ?
+                        <Products 
+                            digitalToolsData={digitalToolsData}
+                            setSelectedTools={setSelectedTools} selectedTools={selectedTools} />
+                        :
+                        <Cart 
+                            selectedTools={selectedTools}
+                            setSelectedTools={setSelectedTools} />
                 }
             </div>
         </div>
