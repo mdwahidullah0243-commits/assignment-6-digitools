@@ -1,16 +1,20 @@
-# React + Vite
+# Project: Digital Tools Buying Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description:
+A modern digital marketplace for buying essential tools and software. Users can easily browse, compare, and purchase a wide range of digital products with a smooth and secure experience. The platform focuses on simplicity, fast access, and reliable delivery to help users get the tools they need without hassle.
 
-Currently, two official plugins are available:
+## ⚙️ Technologies Used:
+- React.js
+- Tailwind CSS, DaisyUI
+- JavaScript (ES6+)
+- React-Toastify (NPM Package)
+- lucide-react (NPM Package)
+- JSON (for product data)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features:
+1. Scalable & Reusable Data Structure =
+The JSON is designed as a clean, flat data schema — each product object is self-contained with consistent property types (string, number, array). This makes it easy to plug into the React framework, map over the array to render UI components, or connect to a backend/database with minimal transformation.
+2. Consistent Pricing & Period Logic =
+Each product has a price as a numeric value and period strictly limited to one of three values — "monthly", "yearly", or "one-time". This makes it straightforward to implement conditional rendering on the frontend, such as showing a "Free" badge when price === 0, or calculating annual savings on yearly plans.
+3. Feature Array as a Mapped List = 
+Every product's features property is a clean string array containing 5 concise bullet points. This can be directly iterated with .map() to render feature lists or pricing comparison tables — with zero extra parsing needed. This pattern is ideal for component-driven architecture, where a single ProductCard component can be fully reused across all 10 products without any conditional data handling.
