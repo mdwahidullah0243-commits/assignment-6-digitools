@@ -31,7 +31,7 @@ const navItems = [
     },
 ];
 
-const Navbar = () => {
+const Navbar = ({ selectedTools }) => {
     const [open, setOpen] = useState(false);
 
     const navLinks = navItems.map(item => {
@@ -66,8 +66,11 @@ const Navbar = () => {
                 </ul>
 
                 <div className='flex items-center gap-5'>
-                    <span className='cursor-pointer'>
+                    <span className='relative cursor-pointer'>
                         <ShoppingCart />
+                        <span className={`${selectedTools.length === 0 ? 'hidden' : ''} absolute -top-4 left-3 bg-red-700 text-white text-base font-semibold px-1.5 rounded-full`}>
+                            {selectedTools.length}
+                        </span>
                     </span>
 
                     <p className='text-base font-semibold cursor-pointer hover:text-cyan-600'>

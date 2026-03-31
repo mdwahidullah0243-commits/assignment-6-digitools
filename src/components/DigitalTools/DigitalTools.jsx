@@ -2,9 +2,8 @@ import React, { use, useState } from 'react';
 import Products from './Products/Products';
 import Cart from './Cart/Cart';
 
-const DigitalTools = ({ digitalToolsRes }) => {
+const DigitalTools = ({ digitalToolsRes, selectedTools, setSelectedTools }) => {
     const [selectedTab, setSelectedTab] = useState('products');
-    const [selectedTools, setSelectedTools] = useState([]);
 
     const digitalToolsData = use(digitalToolsRes);
 

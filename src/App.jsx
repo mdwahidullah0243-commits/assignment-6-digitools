@@ -7,20 +7,25 @@ import Stats from './components/Stats/Stats'
 import Steps from './components/Steps/Steps'
 import Footer from './components/Footer/Footer'
 import DigitalTools from './components/DigitalTools/DigitalTools'
+import { useState } from 'react'
 
 const digitalToolsRes = fetch('/digitalToolsData.json').then(res => res.json())
 
 function App() {
+  const [selectedTools, setSelectedTools] = useState([]); 
 
   return (
     <>
-      <Navbar />
+      <Navbar selectedTools={selectedTools} />
 
       <Banner />
 
       <Stats />
 
-      <DigitalTools digitalToolsRes={digitalToolsRes} />
+      <DigitalTools 
+        digitalToolsRes={digitalToolsRes}
+        setSelectedTools={setSelectedTools} 
+        selectedTools={selectedTools} />
 
       <Steps />
 

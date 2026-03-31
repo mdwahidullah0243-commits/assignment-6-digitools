@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const DigiCardBtn = ({ tool, setSelectedTools, selectedTools, setActiveTool, activeTool }) => {
 
