@@ -1,4 +1,5 @@
 import './App.css'
+import Workflow from './components/Workflow/Workflow'
 import Banner from './components/Banner/Banner'
 import Navbar from "./components/Navbar/Navbar"
 import Pricing from './components/Pricing/Pricing'
@@ -17,6 +18,8 @@ function App() {
       <Steps />
 
       <Pricing />
+
+      <Workflow />
     </>
   )
 }
