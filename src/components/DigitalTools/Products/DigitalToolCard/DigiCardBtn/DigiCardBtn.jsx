@@ -1,5 +1,6 @@
 import { Check } from 'lucide-react';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const DigiCardBtn = ({ tool, setSelectedTools, selectedTools, setActiveTool, activeTool }) => {
 
@@ -7,9 +8,10 @@ const DigiCardBtn = ({ tool, setSelectedTools, selectedTools, setActiveTool, act
         const existingItem = selectedTools.find(existingTool => existingTool.name === tool.name);
         
         if (existingItem) {
-            alert(`${tool.name} is already exist!`);
+            toast.warning(`${tool.name} - is already exist in cart!`, {autoClose: 3000});
         } else {
             setSelectedTools([...selectedTools, tool]);
+            toast.success(`${tool.name} - added to cart.`, {autoClose: 3000});
         }
 
         setActiveTool(tool.name);

@@ -1,10 +1,12 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const AddedDigiTool = ({ tool, selectedTools, setSelectedTools }) => {
     const handleRemoveToolFromCart = (tool) => {
         const filteredCart = selectedTools.filter(existTool => existTool.name !== tool.name);
 
         setSelectedTools(filteredCart);
+        toast.error(`${tool.name} - removed from cart`, {autoClose: 3000})
     }
 
     return (

@@ -7,33 +7,44 @@ import Stats from './components/Stats/Stats'
 import Steps from './components/Steps/Steps'
 import Footer from './components/Footer/Footer'
 import DigitalTools from './components/DigitalTools/DigitalTools'
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
+import { ToastContainer } from 'react-toastify'
 
 const digitalToolsRes = fetch('/digitalToolsData.json').then(res => res.json())
 
 function App() {
-  const [selectedTools, setSelectedTools] = useState([]); 
+  const [selectedTools, setSelectedTools] = useState([]);
 
   return (
     <>
-      <Navbar selectedTools={selectedTools} />
+      <header>
+        <Navbar selectedTools={selectedTools} />
+      </header>
 
-      <Banner />
+      <main>
+        <Banner />
 
-      <Stats />
+        <Stats />
 
-      <DigitalTools 
-        digitalToolsRes={digitalToolsRes}
-        setSelectedTools={setSelectedTools} 
-        selectedTools={selectedTools} />
+        <Suspense fallback={<div className='flex justify-center items-center py-20'><span class="loading loading-dots loading-xl"></span></div>}>
+          <DigitalTools
+            digitalToolsRes={digitalToolsRes}
+            setSelectedTools={setSelectedTools}
+            selectedTools={selectedTools} />
+        </Suspense>
 
-      <Steps />
+        <ToastContainer />
 
-      <Pricing />
+        <Steps />
 
-      <Workflow />
+        <Pricing />
 
-      <Footer />
+        <Workflow />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

@@ -48,11 +48,11 @@ const DigitalTools = ({ digitalToolsRes, selectedTools, setSelectedTools }) => {
                 {
                     selectedTab === 'products'
                         ?
-                        <Products 
+                        <Products
                             digitalToolsData={digitalToolsData}
                             setSelectedTools={setSelectedTools} selectedTools={selectedTools} />
                         :
-                        <Cart 
+                        <Cart
                             selectedTools={selectedTools}
                             setSelectedTools={setSelectedTools} />
                 }
